@@ -1,0 +1,16 @@
+greenery:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ryb00700.us-east-1
+
+      # User/password auth
+      user: dperezneidergmailcom
+      password: ^?)ojx)bW608X\3UKpx0
+
+      role: TRANSFORMER_DEV
+      database: dev_db
+      warehouse: TRANSFORMER_DEV_WH
+      schema: dbt_dperezneidergmailcom
+      threads: 1
