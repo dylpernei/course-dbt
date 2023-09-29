@@ -18,6 +18,15 @@ sources:
         loaded_at_field: created_at
         description: >
           Contains information on different website and online traffic events
+        columns:
+          - name: event_id
+            description: ""
+            tests:
+              - not_null
+              - unique
+          
+          - name: user_id
+            description: ""
       
       - name: users 
         loaded_at_field: created_at
@@ -27,6 +36,19 @@ sources:
       - name: addresses 
         description: >
           Contains informatoin related to addresses
+        
+        columns:
+          - name: address_id
+            description: ""
+            tests:
+                - not_null
+                - unique
+            
+          - name: zipcode
+            description: ""
+            test:
+              - not_null
+
 
       - name: orders 
         loaded_at_field: created_at
